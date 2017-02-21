@@ -16,9 +16,8 @@
 
     @yield('extra-css')
     <style>
-        .card-img-top {
+        .img-100 {
             width: 100%;
-            height: 100%;
         }
     </style>
 
@@ -97,7 +96,7 @@
     </footer>
 
 <!-- JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 @yield('extra-js')

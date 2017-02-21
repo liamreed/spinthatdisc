@@ -20,8 +20,9 @@
             <h2>Spin That Disc!</h2>
             <p>Sellers of new and classic vinyl records, CDs and musical equipment</p>
             <p>
-                <a href="http://andremadarang.com/implementing-a-shopping-cart-in-laravel/" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
-                <a href="https://github.com/drehimself/laravel-shopping-cart-example" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
+                <a href="" class="btn btn-primary btn-lg" target="_blank">Vinyl</a>
+                <a href="" class="btn btn-primary btn-lg" target="_blank">CD</a>
+                <a href="" class="btn btn-primary btn-lg" target="_blank">Equipment</a>
             </p>
         </div> <!-- end jumbotron -->
 
@@ -31,7 +32,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
-                                <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
+                                <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top img-100" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
                                 <a href="{{ url('shop', [$product->slug]) }}"><h4 class="card-title">{{ $product->name }}</h4>
                                     <p class="card-text">{{ $product->price }}</p>
                                 </a>

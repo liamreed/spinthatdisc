@@ -16,6 +16,10 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('slug')->unique();
+            $table->string('type');
+            $table->string('catalogue');
+            $table->string('genre');
+            $table->string('label');
             $table->text('tracklist');
             $table->text('description');
             $table->decimal('price', 10, 2);

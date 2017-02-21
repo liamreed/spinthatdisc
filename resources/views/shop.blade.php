@@ -17,8 +17,8 @@
         @endif
 
         <div class="jumbotron text-center clearfix">
-            <h2>Laravel Shopping Cart Example</h2>
-            <p>An example Laravel App that demos the basic functionality of a typical e-commerce shopping cart.</p>
+            <h2>Spin That Disc!</h2>
+            <p>Sellers of new and classic vinyl records, CDs and musical equipment</p>
             <p>
                 <a href="http://andremadarang.com/implementing-a-shopping-cart-in-laravel/" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
                 <a href="https://github.com/drehimself/laravel-shopping-cart-example" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
@@ -29,11 +29,11 @@
             <div class="row">
                 @foreach ($items as $product)
                     <div class="col-md-3">
-                        <div class="thumbnail">
-                            <div class="caption text-center">
-                                <a href="{{ url('shop', [$product->slug]) }}"><img src="{{ asset('img/' . $product->image) }}" alt="product" class="img-responsive"></a>
-                                <a href="{{ url('shop', [$product->slug]) }}"><h3>{{ $product->name }}</h3>
-                                <p>{{ $product->price }}</p>
+                        <div class="card">
+                            <div class="card-block">
+                                <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
+                                <a href="{{ url('shop', [$product->slug]) }}"><h4 class="card-title">{{ $product->name }}</h4>
+                                    <p class="card-text">{{ $product->price }}</p>
                                 </a>
                             </div> <!-- end caption -->
                         </div> <!-- end thumbnail -->

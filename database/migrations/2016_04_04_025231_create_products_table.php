@@ -16,6 +16,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('slug')->unique();
+            $table->text('tracklist');
             $table->text('description');
             $table->decimal('price', 10, 2);
             $table->string('image')->unique();

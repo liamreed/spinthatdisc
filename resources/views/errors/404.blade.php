@@ -1,12 +1,47 @@
-@extends('master')
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AHH</title>
 
-@section('content')
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-    <div class="container">
-        <h1>404 Error Page</h1>
+        <style>
+            html, body {
+                height: 100%;
+            }
 
-        <p>There was an error. Please go back and try again.</p>
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #B0BEC5;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
 
-    </div> <!-- end container -->
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
 
-@endsection
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 72px;
+                margin-bottom: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="title">Where am I?</div>
+            </div>
+        </div>
+    </body>
+</html>

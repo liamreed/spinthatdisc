@@ -12,11 +12,23 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            'name' => 'Playstation 4',
-            'slug' => 'playstation-4',
-            'description' => 'description goes here',
-            'price' => 399.99,
-            'image' => 'ps4.jpg',
+            'name' => 'Crystal Castles - Amnesty 12" Vinyl',
+            'slug' => 'crystalcastles-amnesty12',
+            'tracklist' => 'A1 - Femen, A2 - Fleece, A3 - Char, A4 - Enth, A5 - Sadist, A6 - Teach Her How To Hunt, B1 - Chloroform, B2 - Frail, B3 - Concrete, B4 - Ornament, B5 - Kept, B6 - Their Kindness Is Charade',
+            'description' => 'Crystal Castles are an experimental electronic band formed in 2003 in Toronto, Ontario by songwriter/producer Ethan
+Kath. Crystal Castles are known for their chaotic live shows and lo-fi melancholic homemade productions. They released
+many limited vinyl singles between 2006 and 2007 before releasing a trilogy of critically acclaimed albums between 2008
+and 2012. Their debut album, Crystal Castles, was released in 2008 and was listed on NME\'s "Top 100 Greatest Albums of
+the Decade" list at # 39. In 2010 their second album, titled (II), charted on the Billboard 200, and includes their
+first worldwide charting single, “Not In Love" featuring vocalist Robert Smith of The Cure. Their third album, (III),
+was released on November 12, 2012 and was the # 1 album of 2012 on Tumblr and also on Hype Machine. The album included 4
+singles: “Plague", "Wrath of God", "Sad Eyes" and "Affection".
+
+Glass announced her departure from the band in October 2014, citing personal and professional reasons. In April 2015,
+Ethan Kath released a new Crystal Castles track, "Frail", featuring a new singer, Edith Frances. He also announced they
+are writing and recording a new album, and here it is !',
+            'price' => 15.41,
+            'image' => 'crystalcastles-amnesty12.jpg',
         ]);
 
         DB::table('products')->insert([

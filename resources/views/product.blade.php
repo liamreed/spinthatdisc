@@ -15,9 +15,9 @@
 
             <div class="col-md-8">
                 <p>
-                    Genre - <a href="/search/genre/{{ $product->genre }}"><span class="badge badge-primary">{{ $product->genre }}</span></a>
+                    Genre - <a href="/genre/{{ $product->genre }}"><span class="badge badge-primary">{{ $product->genre }}</span></a>
                     Cat# - <span class="badge badge-default">{{ $product->catalogue }}</span>
-                    Label - <a href="/search/label/{{ $product->label }}"><span class="badge badge-primary">{{ $product->label }}</span></a></p>
+                    Label - <a href="/label/{{ $product->label }}"><span class="badge badge-primary">{{ $product->label }}</span></a></p>
                 <h3>£{{ $product->price }}</h3>
                 <form action="{{ url('/cart') }}" method="POST" class="side-by-side">
                     {!! csrf_field() !!}
@@ -46,15 +46,14 @@
 
             @foreach ($interested as $product)
                 <div class="col-md-3">
-                    <div class="thumbnail">
+                    <div class="card-deck">
+                    <div class="card">
                         <div class="caption text-center">
                             <a href="{{ url('shop', [$product->slug]) }}"><img class="img-100" src="{{ asset('img/' . $product->image) }}" alt="product" class="img-responsive"></a>
-                            <a href="{{ url('shop', [$product->slug]) }}"><h3>{{ $product->name }}</h3>
+                            <a href="{{ url('shop', [$product->slug]) }}"><h6>{{ $product->name }}</h6>
                                 <p>{{ $product->price }}</p>
-                                <p>{{ $product->genre }}</p>
-                                <p>{{ $product->catalogue }}</p>
-                                <p>{{ $product->label }}</p>
                             </a>
+                        </div>
                         </div> <!-- end caption -->
 
                     </div> <!-- end thumbnail -->

@@ -20,7 +20,6 @@ class ProductController extends Controller
         return view('shop')->with('products', $products);
     }
 
-
     /**
      * Display the specified resource.
      *
@@ -30,7 +29,7 @@ class ProductController extends Controller
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->firstOrFail();
-        $interested = Product::where('slug', '!=', $slug)->get()->random(4);
+        $interested = Product::where('slug', '!=', $slug)->get()->random(3);
 
         return view('product')->with(['product' => $product, 'interested' => $interested]);
     }

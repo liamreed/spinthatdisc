@@ -26,19 +26,17 @@
             </p>
         </div> <!-- end jumbotron -->
 
-        @foreach ($products->chunk(4) as $items)
-            <div class="row">
+        @foreach ($products->chunk(8) as $items)
+                <div class="card-columns">
                 @foreach ($items as $product)
-                    <div class="col-md-3">
                         <div class="card">
+                            <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top img-100" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
                             <div class="card-block">
-                                <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top img-100" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
-                                <a href="{{ url('shop', [$product->slug]) }}"><h4 class="card-title">{{ $product->name }}</h4>
-                                    <p class="card-text">{{ $product->price }}</p>
+                                <a href="{{ url('shop', [$product->slug]) }}"><h6 class="card-title">{{ $product->name }}</h6>
+                                    <p class="card-text"><small class="text-muted">£{{ $product->price }}</small></p>
                                 </a>
                             </div> <!-- end caption -->
                         </div> <!-- end thumbnail -->
-                    </div> <!-- end col-md-3 -->
                 @endforeach
             </div> <!-- end row -->
         @endforeach

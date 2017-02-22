@@ -62,7 +62,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{ set_active('home') }}" href="{{ url('/') }}">Home</a>
+                        <a class="nav-link {{ set_active('/') }}" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link {{ set_active('shop') }}" href="{{ url('/shop') }}">Shop</a>
@@ -89,6 +89,7 @@
 
     @yield('content')
 
+    <br>
     <footer>
       <div class="container">
         <p class="text-muted">Spin That Disc </a></p>

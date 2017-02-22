@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->text('tracklist');
             $table->text('description');
             $table->decimal('price', 10, 2);
+            $table->boolean('featured');
             $table->string('image')->unique();
             $table->timestamps();
         });

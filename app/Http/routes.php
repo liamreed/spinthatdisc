@@ -1,11 +1,11 @@
 <?php
 
-Route::get('/home', function () {
-    return redirect('home');
-});
+Route::get('/', ['as' => 'home_path', 'uses' => function () {
+    return view('home');
+}]);
 
 Route::get('/shop', function () {
-    return redirect('shop');
+    return view('shop');
 });
 
 Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);

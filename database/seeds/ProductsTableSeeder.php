@@ -32,19 +32,32 @@ Glass announced her departure from the band in October 2014, citing personal and
 Ethan Kath released a new Crystal Castles track, "Frail", featuring a new singer, Edith Frances. He also announced they
 are writing and recording a new album, and here it is !',
             'price' => 15.41,
+            'featured' => true,
             'image' => 'crystalcastles-amnesty12.jpg',
         ]);
 
         DB::table('products')->insert([
-            'name' => 'Xbox One',
-            'slug' => 'xbox-one',
-            'type' => 'equipment',
-            'catalogue' => '',
-            'genre' => '',
-            'label' => '',
-            'description' => 'description goes here',
-            'price' => 449.99,
-            'image' => 'xbox-one.jpg',
+            'name' => 'Chemical Brothers - Push The Button 12" Vinyl',
+            'slug' => 'chemicalbrothers-pushthebutton12',
+            'type' => 'vinyl',
+            'catalogue' => '5633021',
+            'genre' => 'Breaks',
+            'label' => 'Freestyle Dust',
+            'description' => 'As we move through the millennial years, so to The Chemical Brothers accompanied us on our musical journey. Onto album
+number five, and it\'s another winner, jam packed with breaks, hybrids, crossovers and collaborations. Opening with the
+monster new cut "Galvanize", featuring a killer rap by Q-Tip (and reaching no. 3 in the charts - their highest since
+"Hey Boy, Hey Girl"). Next came "The Boxer", featuring Tim Burgess again, but this time ditching the \'weedy\' (his words)
+approach, for a more ballsy, anthemic chorus. "Push The Button" positioned itself at the top of the pile of heavyweight
+breaks-crossover LPs. While Fatboy Slim floundered and The Prodigy got all electroclash on us, The Chems stuck to what
+they did best; making block-rocking, chunky tracks (which have hooks!), either on a breakbeat tip, mellower moments or
+4/4 electronic drivers (techno had, of course, began to take over breakbeat as the nightclub sound of choice), all of
+which create a proper, cohesive LP rather than a collection of singles and fillers. Other headlining colabs crop up:
+Kele Okereke (Bloc Party), Anna-Lynne Williams (Trespassers William), The Magic Numbers, Anwar Superstar (Mos Def\'s
+bro\') all stepping up to the mic to contribute. By now they were global superstars, but they still had a foot in the
+underground club scene, and were still a formidable force live. One of the truly great British bands.',
+            'price' => 19.99,
+            'featured' => true,
+            'image' => 'chemicalbrothers-pushthebutton12.jpg',
         ]);
 
         DB::table('products')->insert([
@@ -56,6 +69,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 2299.99,
+            'featured' => false,
             'image' => 'macbook-pro.jpg',
         ]);
 
@@ -68,6 +82,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 799.99,
+            'featured' => false,
             'image' => 'ipad-retina.jpg',
         ]);
 
@@ -80,6 +95,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 699.99,
+            'featured' => false,
             'image' => 'acoustic.jpg',
         ]);
         DB::table('products')->insert([
@@ -91,6 +107,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 899.99,
+            'featured' => true,
             'image' => 'electric.jpg',
         ]);
 
@@ -103,6 +120,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 99.99,
+            'featured' => false,
             'image' => 'headphones.jpg',
         ]);
 
@@ -115,6 +133,7 @@ are writing and recording a new album, and here it is !',
             'label' => '',
             'description' => 'description goes here',
             'price' => 499.99,
+            'featured' => true,
             'image' => 'speakers.jpg',
         ]);
     }

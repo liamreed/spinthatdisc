@@ -1,3 +1,9 @@
+<?php
+use App\Http\Requests;
+use App\Product;
+
+?>
+
 @extends('master')
 
 @section('content')
@@ -17,27 +23,27 @@
         @endif
 
         <div class="jumbotron text-center clearfix">
-            <h2>Laravel Shopping Cart Example</h2>
-            <p>An example Laravel App that demos the basic functionality of a typical e-commerce shopping cart.</p>
+            <h2>Spin That Disc</h2>
+            <p>Home page example</p>
             <p>
-                <a href="http://andremadarang.com/implementing-a-shopping-cart-in-laravel/" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
-                <a href="https://github.com/drehimself/laravel-shopping-cart-example" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
+                <a href="" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
+                <a href="" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
             </p>
         </div> <!-- end jumbotron -->
 
-        @foreach ($products->chunk(4) as $items)
-            <div class="row">
+        <h4>Featured Products</h4>
+
+        @foreach (Product::all()->where('featured', '=', '1')->chunk(8) as $items)
+                <div class="card-columns">
                 @foreach ($items as $product)
-                    <div class="col-md-3">
-                        <div class="thumbnail">
-                            <div class="caption text-center">
-                                <a href="{{ url('shop', [$product->slug]) }}"><img src="{{ asset('img/' . $product->image) }}" alt="product" class="img-responsive"></a>
-                                <a href="{{ url('shop', [$product->slug]) }}"><h3>{{ $product->name }}</h3>
-                                <p>{{ $product->price }}</p>
+                        <div class="card">
+                            <a href="{{ url('shop', [$product->slug]) }}"><img class="card-img-top img-100" src="{{ asset('img/' . $product->image) }}" alt="product"></a>
+                            <div class="card-block">
+                                <a href="{{ url('shop', [$product->slug]) }}"><h5 class="card-title">{{ $product->name }}</h5>
+                                    <p class="card-text"><small class="text-muted">£{{ $product->price }}</small></p>
                                 </a>
                             </div> <!-- end caption -->
                         </div> <!-- end thumbnail -->
-                    </div> <!-- end col-md-3 -->
                 @endforeach
             </div> <!-- end row -->
         @endforeach

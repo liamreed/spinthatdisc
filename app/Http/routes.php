@@ -8,11 +8,11 @@ Route::get('/shop', function () {
     return view('shop');
 });
 
+Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);
+
 Route::get('/shop/{genre}', function ($genre = 'Electronic') {
     return view('shop')->with('genre', $genre);
 });
-
-Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);
 
 Route::resource('cart', 'CartController');
 Route::delete('emptyCart', 'CartController@emptyCart');

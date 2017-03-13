@@ -17,8 +17,8 @@
         @endif
 
         <div class="jumbotron text-center clearfix">
-            <h2>Spin That Disc!</h2>
-            <p>Sellers of new and classic vinyl records, CDs and musical equipment</p>
+            <h2>Spin That Disc Online Store</h2>
+            <p>Shop a selection of new and classic vinyl records, CDs and musical equipment</p>
             <p>
                 <a href="" class="btn btn-primary btn-lg" target="_blank">Vinyl</a>
                 <a href="" class="btn btn-primary btn-lg" target="_blank">CD</a>

@@ -24,10 +24,10 @@ use App\Product;
 
         <div class="jumbotron text-center clearfix">
             <h2>Spin That Disc</h2>
-            <p>Home page example</p>
+            <p>Sellers of new and classic vinyl records, CDs and musical equipment</p>
             <p>
                 <a href="" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
-                <a href="" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
+                <a href="" class="btn btn-success btn-lg" target="_blank">About Us</a>
             </p>
         </div> <!-- end jumbotron -->
 

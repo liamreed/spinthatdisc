@@ -1,7 +1,7 @@
 @extends('app')
 
 <head>
-<title>Monitor | Login</title>
+<title>SpinThatDisc | Login</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta
  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -29,7 +29,7 @@ html, body {
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <b>Site</b>Monitor
+            <b>Spin That Disc</b>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">

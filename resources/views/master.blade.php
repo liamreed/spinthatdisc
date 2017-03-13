@@ -73,12 +73,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+                </ul>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link {{ set_active('wishlist') }}" href="{{ url('/wishlist') }}">Wishlist ({{ Cart::instance('wishlist')->count(false) }})</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ set_active('cart') }}" href="{{ url('/cart') }}">Cart ({{ Cart::instance('default')->count(false) }})</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ set_active('login') }}" href="{{ url('/login') }}">Login </a>
                     </li>
                 </ul>
             </div>

@@ -11,6 +11,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('products')->delete();
         DB::table('products')->insert([
             'name' => 'Crystal Castles - Amnesty 12" Vinyl',
             'slug' => 'crystalcastles-amnesty12',

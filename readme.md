@@ -1,8 +1,10 @@
 # Spin That Disc Project
 
+My contribution to the group store redesign project
+
 ## Installation
 
-This is just local installation using something like MAMP/WAMP or XAMPP. Of course you are free to use homestead if you like.
+Created using a local environment (XAMPP). Of course you are free to use homestead if you like.
 
 1. clone the repo and cd into it
 1. `composer install`
@@ -12,7 +14,7 @@ This is just local installation using something like MAMP/WAMP or XAMPP. Of cour
 1. `php artisan migrate`
 1. `php artisan db:seed`
 1. `php artisan serve`
-1. Visit localhost:8000 in your browser
+1. Visit localhost in your browser
 
 ## Demo:
 [![SpinThatDiscDemo](https://img.youtube.com/vi/HJW-oESZhUA/0.jpg)](https://www.youtube.com/watch?v=HJW-oESZhUA)

@@ -14,5 +14,5 @@ This is just local installation using something like MAMP/WAMP or XAMPP. Of cour
 1. `php artisan serve`
 1. Visit localhost:8000 in your browser
 
-Demo:
+## Demo:
 [![SpinThatDiscDemo](https://img.youtube.com/vi/HJW-oESZhUA/0.jpg)](https://www.youtube.com/watch?v=HJW-oESZhUA)

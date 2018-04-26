@@ -1,10 +1,10 @@
 # Spin That Disc Project
 
-My contribution to the group store redesign project
+My contribution to the final group store redesign project
 
 ## Installation
 
-Created using a local environment (XAMPP). Of course you are free to use homestead if you like.
+Created using a local environment (XAMPP on Windows). Of course you are free to use homestead if you like.
 
 1. clone the repo and cd into it
 1. `composer install`
